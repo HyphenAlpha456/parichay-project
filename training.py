@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score #type:ignore
 
 df=pd.read_csv('Training.csv')
 X=df.iloc[:,0:132]
-Y=df['prognosis']
+Y=df['prognosis'] 
 le=LabelEncoder()
 Y=le.fit_transform(Y)
 ss=StandardScaler()
